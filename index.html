@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html5</title>
+    <style>
+        img{
+            width:200px;
+        }
+        table{
+            table-layout: fixed;
+            border-collapse:collapse;
+            border-spacing:0;
+        }
+        .detail ~ .password{
+            height:60px;
+        }
+        .box :nth-of-type(2){
+            color: hsla(360, 100%, 50%, 1);
+        }
+        .box{
+            line-height:220%;
+        }
+    </style>
+    <script>
+        function bbb(){
+            console.log('bbb');
+        }
+    
+        function aaaaa(){
+            console.log('aaa');
+        }
+    </script>
+</head>
+<body>
+   <div class="img">
+       <img src="aaa.jpg" id="aaa" onerror="aaaaa();" onload="bbb();"/>
+       <span>12323</span>
+   </div> 
+   <a href="https://www.runoob.com/tags/att-a-target.html" target="aaa">百度</a>
+   <iframe style="width:400px;height:400px;" name="aaa" src="bb.html">
+        
+   </iframe>
+   <div class="box">
+    <h2>欢迎</h2>
+    <p>到</p>
+    <p>饥人谷</p>
+    <div>学前端</div>
+  </div>
+
+   <input type="checkbox" checked >
+   <input type="checkbox" checked=true >
+   <table border=1>
+    <thead>
+        <tr>
+            <th>姓名</th>
+            <th>语文</th>
+            <th>数学</th>
+            <th>英语</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>小明1111111</td>
+            <td>99</td>
+            <td colspan="2">88</td>
+        </tr>
+        <tr>
+            <td>小红</td>
+            <td>44</td>
+            <td>55</td>
+            <td>33</td>
+        </tr>
+        <tr>
+            <td>小黑</td>
+            <td>54</td>
+            <td>67</td>
+            <td>77</td>
+        </tr>
+    </tbody>
+</table>
+</body>
+</html>
